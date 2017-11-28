@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    block head
+      meta(charset="utf-8")
+
+      meta(name="twitter:card", content="summary")
+      meta(name="twitter:site", content="")
+      meta(name="twitter:creator", content="")
+
+      meta(property="og:title", content="")
+      meta(property="og:type", content="")
+      meta(property="og:url", content="")
+      meta(property="og:image", content="")
+
+      title=title
+
+      link(href="/favicon.ico", rel="icon")
+      link(href="/index.css", rel="stylesheet")
+  body
+    block body
+      header
+        h1=title
+      main
+        include user/login
+        include user/signup
+      footer
